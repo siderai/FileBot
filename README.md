@@ -1,0 +1,3 @@
+# In progress...
+
+Training project at metaclass.kts.studio
