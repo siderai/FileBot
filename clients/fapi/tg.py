@@ -1,13 +1,11 @@
-from typing import ClassVar, Type, List, Any
-from dataclasses import field
 from json import JSONDecodeError
+from typing import Any
 
 import aiohttp
-from marshmallow_dataclass import dataclass
-from marshmallow import Schema, EXCLUDE, ValidationError
+from marshmallow import ValidationError
 
 from clients.tg.api import TgClient, TgClientError
-from clients.tg.dcs import File, Message, GetFileResponse, SendMessageResponse
+from clients.tg.dcs import File, GetFileResponse, Message, SendMessageResponse
 
 
 class TgClientWithFile(TgClient):

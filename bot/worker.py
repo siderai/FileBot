@@ -35,9 +35,9 @@ class Worker:
         """
         # send greeting message
         chat_id = update.message.chat.id
-        # await self.tg_client.send_message(chat_id, text='[greeting]')
-        # if update.message.message_id == 1:
-        #     await self.tg_client.send_message(chat_id, text='[greeting]')
+        await self.tg_client.send_message(chat_id, text="[greeting]")
+        if update.message.message_id == 1:
+            await self.tg_client.send_message(chat_id, text="[greeting]")
 
         # Реагирует только на документы. Если в сообщении нет документа, просит добавить
         doc = update.message.document
