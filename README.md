@@ -2,7 +2,7 @@
 
 Saves your files to cloud storage Minio (S3).
 
-Performs well even with large files thanks to the data streaming protocol. Limit: up to 2gb each file.
+Performs well even with large files thanks to the data streaming. Limit: up to 2gb each file.
 
 In order to start, you need to define environment variables:
 ```
