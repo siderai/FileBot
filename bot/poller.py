@@ -15,8 +15,8 @@ class Poller:
     # @log_exceptions
     async def _worker(self):
         """
-        Получает данные из tg (тип UpdateObj), используя метод get_updates_in_objects,
-        и кладет их в очередь queue
+        Получает список обновлений, используя метод get_updates_in_objects
+        и кладет их в очередь queue. 
         """
         offset = 0
         while self.is_running:
