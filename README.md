@@ -9,7 +9,9 @@ In order to start, you need to define environment variables:
 "BOT_TOKEN"
 "MINIO_SERVER_URL"
 "MINIO_ROOT_PASSWORD"
-"MINIO_ROOT_USER" 
+"MINIO_ROOT_USER"
+"AWS_ACCESS_KEY_ID"
+"AWS_SECRET_ACCESS_KEY"
 ```
 
 Then execute run_bot.py
