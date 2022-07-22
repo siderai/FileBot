@@ -3,8 +3,8 @@ import os
 
 from aiobotocore.session import get_session
 
-AWS_ACCESS_KEY_ID = "xxx"
-AWS_SECRET_ACCESS_KEY = "xxx"
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 
 
 async def go():
